@@ -39,7 +39,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-    .page.theme_light {
+    :root {
         --accent-color: #ff8dcb;
         --bg-color: #fff1f7;
         --decorated-text-color: #ffc2e6;
@@ -48,11 +48,15 @@
         --text-color: #353430;
     }
 
-    .theme_light .rec-text {
+    .page {
+        background-image: url(../images/cover-image-light.png);
+    }
+
+    .rec-text {
         display: none;
     }
 
-    .theme_light .rec-logo {
+    .rec-logo {
         display: none;
     }
 
