@@ -52,11 +52,11 @@
         background-image: url(../images/cover-image-light.png);
     }
 
-    .rec-text {
+    .theme_auto .rec-text {
         display: none;
     }
 
-    .rec-logo {
+    .theme_auto .rec-logo {
         display: none;
     }
 
