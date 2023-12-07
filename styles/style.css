@@ -8,9 +8,7 @@
     gap: 40px;
     min-inline-size: 375px;
     max-inline-size: 1440px;
-    padding: 10px 10px;
     margin: 0 auto;
-
     background-color: var(--bg-color, #000028);
     background-image: url(../images/cover-image-dark.png);
     background-size: cover;
@@ -22,24 +20,21 @@
 @media (width >=768px) {
     .page {
         gap: 60px;
-        padding: 20px 20px;
     }
 }
 
 .header {
+    padding: 10px;
     position: relative;
     display: grid;
-
     align-content: space-between;
-
     block-size: max(668px, 100vh);
     grid-template-rows: 1fr min-content 1fr;
-    margin-bottom: 10px;
 }
 
-@media (width >=768px) {
+@media (width >= 768px) {
     .header {
-        margin-bottom: 20px;
+        padding: 20px;
     }
 }
 
@@ -128,6 +123,7 @@
 }
 
 .rec-text {
+    margin: 10px;
     position: absolute;
     inset-inline-end: 30px;
 }
@@ -139,6 +135,7 @@
 }
 
 .rec-logo {
+    margin: 10px;
     position: absolute;
     inset-inline-end: 9px;
     inset-block-start: 8px;
@@ -150,6 +147,7 @@
 }
 
 .decorated-zone::before {
+    margin: 10px;
     content: "";
     position: absolute;
     inset-inline-end: 0;
@@ -161,6 +159,7 @@
 }
 
 .decorated-zone::after {
+    margin: 10px;
     content: "";
     position: absolute;
     inset-inline-start: 0;
@@ -171,7 +170,26 @@
     border-inline-start: 1px solid var(--decorated-zone-color, #ff0070);
 }
 
+@media (width >= 768px) {
+    .rec-text {
+        margin: 20px;
+    }
+
+    .rec-logo {
+        margin: 20px;
+    }
+
+    .decorated-zone::before {
+        margin: 20px;
+    }
+
+    .decorated-zone::after {
+        margin: 20px;
+    }
+}
+
 .content {
+    padding: 0 10px 0 10px;
     display: flex;
     flex-direction: column;
     gap: 52px;
@@ -180,6 +198,7 @@
 @media (width >= 768px) {
     .content {
         gap: 81px;
+        padding: 0 20px 0 20px;
     }
 }
 
@@ -338,7 +357,8 @@
 }
 
 .footer {
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    padding: 20px;
     position: relative;
     block-size: max(668px, 100vh);
     display: grid;
@@ -347,7 +367,7 @@
 
 @media (width >= 768px) {
     .footer {
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
 }
 
